@@ -7,7 +7,7 @@ provider "aws" {
 
 resource "aws_instance" "web" {
   ami           = "ami-0563db429435a8b9c"
-  instance_type = "t3.micro"
+  instance_type = "t2.micro"
 availability_zone    = "us-west-1b"
   tags = {
     Name = "HelloWorld"
